@@ -1,0 +1,270 @@
+.update-wrapper {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.update-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.update-course-form {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 35px;
+}
+
+.update-field {
+  margin-bottom: 18px;
+}
+
+.update-field label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.update-input,
+.update-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+  outline: none;
+  font-size: 15px;
+}
+
+.update-textarea {
+  resize: vertical;
+}
+
+.update-file {
+  margin-top: 8px;
+}
+
+/* Two Inputs Row */
+.update-row {
+  display: flex;
+  gap: 15px;
+}
+
+.update-row input {
+  flex: 1;
+}
+
+/* Save Course Button */
+.update-btn-save {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  background: rgb(0, 128, 255);;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.update-btn-save:hover {
+  background: #004bcc;
+}
+
+/* Divider Line */
+.update-divider {
+  margin: 35px 0;
+}
+
+.update-section h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.update-box {
+  background: #f7f9fc;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #e1e4eb;
+}
+
+.update-box h4 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+/* Add Buttons */
+.update-btn {
+  padding: 10px 16px;
+  background: rgb(0, 128, 255);;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.update-btn:hover {
+  background: #004bcc;
+}
+
+.update-item {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.update-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.update-item-header strong {
+  font-size: 18px;
+}
+
+/* Buttons inside items */
+.update-btn-small {
+  padding: 5px 10px;
+  background: rgb(0, 128, 255);;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.update-btn-small:hover {
+  background: #0074c9;
+}
+
+.update-btn-delete {
+  padding: 5px 10px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.update-btn-delete:hover {
+  background: #c0392b;
+}
+
+/* Edit Box */
+.update-edit-box {
+  margin-top: 10px;
+  padding: 15px;
+  background: #f7f9fc;
+  border-radius: 8px;
+  border: 1px solid #dce2ee;
+}
+
+.update-btn-cancel {
+  padding: 6px 12px;
+  background: #bfbfbf;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.update-btn-cancel:hover {
+  background: #a5a5a5;
+}
+
+.update-btn-back {
+  margin-top: 30px;
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.update-btn-back:hover {
+  background: #222;
+}
+
+.course-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.course-popup-box {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 340px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Success Popup */
+.course-popup-box.success {
+  border-left: 6px solid #2ecc71;
+  background: #eaffef;
+}
+
+/* Error Popup */
+.course-popup-box.error {
+  border-left: 6px solid #e74c3c;
+  background: #ffe8e8;
+}
+
+/* Confirm Popup */
+.course-popup-box.confirm {
+  border-left: 6px solid #e74c3c;
+  background: white;
+}
+
+/* Popup Buttons */
+.popup-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.confirm-btn {
+  padding: 8px 16px;
+  background: #d63031;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.cancel-btn {
+  padding: 8px 16px;
+  background: #bdbdbd;
+  border: none;
+  border-radius: 6px;
+}

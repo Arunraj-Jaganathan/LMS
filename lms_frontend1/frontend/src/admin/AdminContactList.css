@@ -1,0 +1,168 @@
+/* MAIN WRAPPER */
+.admin-contact-container {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.admin-contact-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* NO CONTACT MESSAGE */
+.admin-no-contact {
+  text-align: center;
+  opacity: 0.7;
+  font-size: 16px;
+}
+
+/* CONTACT LIST */
+.admin-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* CONTACT CARD */
+.admin-contact-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-contact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* HEADER */
+.admin-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-card-subject {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+}
+
+.admin-delete-btn {
+  background: #e74c3c;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.admin-delete-btn:hover {
+  background: #c0392b;
+}
+
+/* TEXT */
+.admin-card-line {
+  margin: 8px 0;
+}
+
+.admin-card-message {
+  margin-top: 10px;
+  padding: 12px;
+  background: #f9f9f9;
+  /* border-left: 4px solid #3498db; */
+  border-radius: 6px;
+  line-height: 1.5;
+}
+
+/* TIME */
+.admin-card-time {
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: 0.6;
+  text-align: right;
+}
+
+/* POPUP OVERLAY */
+.admin-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* POPUP BOX */
+.admin-popup-box {
+  background: #ffffff;
+  padding: 25px 35px;
+  border-radius: 14px;
+  max-width: 400px;
+  width: 92%;
+  text-align: center;
+  animation: fadeInScale 0.25s ease-out;
+}
+
+.admin-success {
+  border-left: 6px solid #2ecc71;
+  color: #2ecc71;
+}
+
+.admin-error {
+  border-left: 6px solid #e74c3c;
+  color: #e74c3c;
+}
+
+.admin-confirm-box {
+  border-left: 6px solid #e74c3c;
+  color: #333;
+  animation: none;
+}
+
+/* POPUP BUTTONS */
+.admin-popup-actions {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.admin-confirm-btn {
+  background: #e74c3c;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.admin-cancel-btn {
+  background: #7f8c8d;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
