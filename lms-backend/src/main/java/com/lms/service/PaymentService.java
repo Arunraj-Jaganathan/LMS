@@ -96,9 +96,9 @@ public class PaymentService {
         if (!exists) {
             user.getPurchasedCourses().add(course);
             userRepository.save(user);
-            System.out.println("✅ Course added: " + course.getCourse_name());
+            System.out.println("Course added: " + course.getCourse_name());
         } else {
-            System.out.println("ℹ️ Course already purchased.");
+            System.out.println("Course already purchased.");
         }
     }
 }
